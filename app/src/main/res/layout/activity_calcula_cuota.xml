@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#015c56"
+    tools:context=".CalculaCuotaActivity">
+
+
+    <EditText
+        android:id="@+id/txt_MontoCredito"
+        android:layout_width="123dp"
+        android:layout_height="46dp"
+        android:background="@drawable/spinner_border"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#F1C9A0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <TextView
+        android:id="@+id/txt_digitecredito"
+        android:layout_width="298dp"
+        android:layout_height="46dp"
+        android:text="Digite el monto de crédito solicitado:"
+        android:textColor="#F1C9A0"
+        android:textColorHint="#F1C9A0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <Spinner
+        android:id="@+id/spinner_annioscredito"
+        android:layout_width="121dp"
+        android:layout_height="35dp"
+        android:background="#F1C9A0"
+        android:popupBackground=" #015c56 "
+        android:textColor="#F1C9A0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <Spinner
+        android:id="@+id/spinner_tipocredito"
+        android:layout_width="166dp"
+        android:layout_height="37dp"
+        android:background="#F1C9A0"
+        android:popupBackground=" #015c56 "
+        android:textColor="#F1C9A0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <TextView
+        android:id="@+id/tv_annios"
+        android:layout_width="266dp"
+        android:layout_height="37dp"
+        android:text="Digite el período del crédito en años:"
+        android:textColor="#F1C9A0"
+        android:textColorHint="#F1C9A0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <TextView
+        android:id="@+id/tv_periodocred"
+        android:layout_width="190dp"
+        android:layout_height="39dp"
+        android:text="Digite el tipo de crédito:"
+        android:textColor="#F1C9A0"
+        android:textColorHint="#F1C9A0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359" />
+
+    <Button
+        android:id="@+id/btn_anadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="MostrarCuotasMensuales"
+        android:text="Calcula cuota"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/tv_cuotamensual"
+        android:layout_width="311dp"
+        android:layout_height="85dp"
+        android:background="@drawable/spinner_border"
+        android:gravity="center"
+        android:textColor="#F1C9A0"
+        android:textColorHint="#F1C9A0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783" />
+
+    <TextView
+        android:id="@+id/tv_indicamensual"
+        android:layout_width="203dp"
+        android:layout_height="46dp"
+        android:text="Monto a cancelar por mes:"
+        android:textColor="#F1C9A0"
+        android:textColorHint="#F1C9A0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+</androidx.constraintlayout.widget.ConstraintLayout>

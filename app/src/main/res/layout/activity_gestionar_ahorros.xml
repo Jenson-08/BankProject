@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" #015c56"
+    tools:context=".GestionarAhorrosActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="414dp"
+        android:layout_height="246dp"
+        android:showDividers="none"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.313"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:background="@drawable/spinner_border">
+
+
+            <TextView
+                android:id="@+id/txt_nomAhorro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_border"
+                android:text="Nombre"
+                android:textAlignment="center"
+                android:textColor=" #f1c9a0" />
+
+            <TextView
+                android:id="@+id/txt_cuotaAhorro"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_border"
+                android:text="Cuota"
+                android:textAlignment="center"
+                android:textColor=" #f1c9a0" />
+
+            <TextView
+                android:id="@+id/txt_digiteCuota"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_border"
+                android:text="Digite cuota"
+                android:textAlignment="center"
+                android:textColor=" #f1c9a0" />
+
+            <TextView
+                android:id="@+id/txt_activar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_border"
+                android:text="Activar ahorro"
+                android:textAlignment="center"
+                android:textColor=" #f1c9a0" />
+        </TableRow>
+
+        <TableRow android:background="@drawable/spinner_border">
+
+
+            <TextView
+                android:id="@+id/txt_nomNavidenio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_border"
+                android:gravity="center|center_horizontal"
+                android:text="Navideño"
+                android:textColor=" #f1c9a0" />
+
+            <TextView
+                android:id="@+id/txt_cantCuotaNavidenio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_border"
+                android:gravity="center"
+                android:textColor=" #f1c9a0" />
+
+            <EditText
+                android:id="@+id/txt_digiteCuotaNavidenio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_border"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Digite el monto"
+                android:inputType="number"
+                android:textColor=" #f1c9a0"
+                android:textColorHint=" #f1c9a0 "
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_activarNavidenio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:onClick="ingresaNavidennio"
+                android:text="Activar" />
+
+        </TableRow>
+
+        <TableRow android:background="@drawable/spinner_border">
+
+
+            <TextView
+                android:id="@+id/txt_nomEscolar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_border"
+                android:gravity="center|center_horizontal"
+                android:text="Escolar"
+                android:textColor=" #f1c9a0" />
+
+            <TextView
+                android:id="@+id/txt_cantCuotaEscolar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_border"
+                android:gravity="center"
+                android:textColor=" #f1c9a0" />
+
+            <EditText
+                android:id="@+id/txt_digiteCuotaEscolar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_border"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Digite el monto"
+                android:inputType="number"
+                android:textColor=" #f1c9a0"
+                android:textColorHint=" #f1c9a0 "
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_activarEscolar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:onClick="ingresaEscolar"
+                android:text="Activar" />
+        </TableRow>
+
+        <TableRow android:background="@drawable/spinner_border">
+
+            <TextView
+                android:id="@+id/txt_nomMarchamo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_border"
+                android:gravity="center|center_horizontal"
+                android:text="Marchamo"
+                android:textColor=" #f1c9a0" />
+
+            <TextView
+                android:id="@+id/txt_cantCuotaMarchamo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_border"
+                android:gravity="center"
+                android:textColor=" #f1c9a0" />
+
+            <EditText
+                android:id="@+id/txt_digiteCuotaMarchamo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_border"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Digite el monto"
+                android:inputType="number"
+                android:textColor=" #f1c9a0"
+                android:textColorHint=" #f1c9a0 "
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_activarMarchamo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:onClick="ingresaMarchamo"
+                android:text="Activar" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/spinner_border">
+
+            <TextView
+                android:id="@+id/txt_nomExtraord"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_border"
+                android:gravity="center|center_horizontal"
+                android:text="Extraordinario"
+                android:textColor=" #f1c9a0" />
+
+            <TextView
+                android:id="@+id/txt_cantCuotaExtraord"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_border"
+                android:gravity="center"
+                android:textColor=" #f1c9a0" />
+
+            <EditText
+                android:id="@+id/txt_digiteCuotaExtraord"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/spinner_border"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Digite el monto"
+                android:inputType="number"
+                android:textColor=" #f1c9a0"
+                android:textColorHint=" #f1c9a0 "
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_activarExtraord"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:onClick="ingresaExtraordinario"
+                android:text="Activar" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/nomClienteAhorro"
+        android:layout_width="301dp"
+        android:layout_height="58dp"
+        android:gravity="center_horizontal|left|center_vertical"
+        android:text="Ahorros de:"
+        android:textColor=" #f1c9a0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="243dp"
+        android:layout_height="309dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/logoproyecto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
